@@ -1,0 +1,38 @@
+:root{--azul:#0c4a6e;--azul-m:#0369a1;--cinza:#475569;--fundo:#f0f9ff;--branco:#fff;--ok:#047857;--erro:#b91c1c;--borda:#e2e8f0}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--fundo);color:#0f172a;min-height:100vh;display:flex;flex-direction:column}
+.topbar{background:var(--azul);color:var(--branco);display:flex;align-items:center;gap:1.5rem;padding:.75rem 1.5rem;flex-wrap:wrap}
+.topbar a{color:var(--branco);text-decoration:none}.brand a{font-weight:700;font-size:1.15rem}
+.nav{display:flex;gap:1rem;flex:1}.nav a:hover{text-decoration:underline}
+.userbox{display:flex;align-items:center;gap:.5rem;font-size:.9rem}.user-name{font-weight:600}.user-perfil{opacity:.85;font-size:.85rem}
+.btn-sair{background:#dc2626;padding:.35rem .75rem;border-radius:4px;font-size:.85rem}.btn-sair:hover{background:#b91c1c}
+.container{width:min(1100px,94%);margin:1.5rem auto;flex:1}
+.footer{text-align:center;padding:1rem;color:var(--cinza);font-size:.85rem;border-top:1px solid var(--borda);background:var(--branco)}
+.login-page{display:flex;align-items:center;justify-content:center;min-height:100vh;background:linear-gradient(135deg,#0c4a6e,#0369a1)}
+.login-card{background:var(--branco);padding:2rem;border-radius:10px;width:min(380px,92%);box-shadow:0 10px 40px rgba(0,0,0,.2)}
+.login-card h1{margin:0 0 .25rem;color:var(--azul);text-align:center}.login-card p{text-align:center;color:var(--cinza);margin:0 0 1.25rem}
+.login-card label{display:block;margin:.75rem 0 .25rem;font-size:.9rem;font-weight:600}
+.login-card input{width:100%;padding:.6rem .75rem;border:1px solid var(--borda);border-radius:6px;font-size:1rem}
+.login-card button{width:100%;margin-top:1.25rem;padding:.7rem;background:var(--azul-m);color:#fff;border:none;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer}
+.login-card button:hover{background:var(--azul)}
+.alert{padding:.75rem 1rem;border-radius:6px;margin-bottom:1rem;font-size:.9rem}
+.alert.error{background:#fee2e2;color:var(--erro);border:1px solid #fecaca}
+.alert.success{background:#d1fae5;color:var(--ok);border:1px solid #a7f3d0}
+h1.page-title{margin:0 0 1rem;color:var(--azul);font-size:1.5rem}
+.card{background:var(--branco);border-radius:8px;padding:1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:1.25rem}
+.toolbar{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-bottom:1rem}
+.toolbar form{display:flex;gap:.5rem;flex:1}
+.toolbar input[type=search],.toolbar input[type=text],.toolbar input[type=email],.toolbar input[type=tel],.toolbar input[type=number],.toolbar input[type=datetime-local],.toolbar select{padding:.5rem .65rem;border:1px solid var(--borda);border-radius:6px;font-size:.95rem}
+.toolbar input[type=search]{flex:1;min-width:160px}
+.btn{display:inline-block;padding:.5rem .9rem;border-radius:6px;border:none;cursor:pointer;font-size:.9rem;text-decoration:none;color:#fff;background:var(--azul-m)}
+.btn:hover{background:var(--azul)}.btn-secondary{background:var(--cinza)}.btn-secondary:hover{background:#334155}.btn-sm{padding:.3rem .6rem;font-size:.8rem}
+table.data{width:100%;border-collapse:collapse;font-size:.9rem}
+table.data th,table.data td{padding:.65rem .75rem;text-align:left;border-bottom:1px solid var(--borda)}
+table.data th{background:#e0f2fe;color:var(--azul);font-weight:600}table.data tr:hover td{background:#f8fafc}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.form-grid label{display:block;font-weight:600;font-size:.85rem;margin-bottom:.25rem}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:.5rem .65rem;border:1px solid var(--borda);border-radius:6px;font-size:.95rem}
+.form-actions{margin-top:1.25rem;display:flex;gap:.5rem}
+.dashboard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.dash-card{background:var(--branco);border-radius:8px;padding:1.5rem;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:4px solid var(--azul-m)}
+.dash-card a{color:var(--azul);font-weight:600;text-decoration:none;font-size:1.1rem}.dash-card p{color:var(--cinza);margin:.5rem 0 0;font-size:.9rem}
+.empty{color:var(--cinza);padding:1rem;text-align:center}
